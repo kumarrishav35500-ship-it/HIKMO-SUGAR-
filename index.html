@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hikmo Sugar | Ayurvedic Diabetes Care</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; color: #333; }
+    header { background: #2e7d32; color: #fff; padding: 20px; text-align: center; }
+    section { padding: 20px; margin: 15px; background: #fff; border-radius: 8px; }
+    h2 { color: #2e7d32; }
+    ul { padding-left: 20px; }
+    .btn { display: inline-block; background: #2e7d32; color: #fff; padding: 12px 20px; text-decoration: none; border-radius: 6px; }
+    .contact { background: #e8f5e9; }
+    form input, form textarea, form button {
+      width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc;
+    }
+    form button { background: #2e7d32; color: #fff; border: none; font-size: 16px; cursor: pointer; }
+    footer { text-align: center; padding: 15px; background: #2e7d32; color: #fff; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hikmo Sugar</h1>
+  <p>Ayurvedic Diabetes Care Solution</p>
+</header>
+
+<section>
+  <h2>दवा के बारे में</h2>
+  <p>Hikmo Sugar एक आयुर्वेदिक दवा है जो शुगर (डायबिटीज) को नियंत्रित करने में सहायक है। यह दवा प्राकृतिक जड़ी-बूटियों से बनाई गई है और नियमित सेवन से बेहतर परिणाम देती है।</p>
+</section>
+
+<section>
+  <h2>परहेज (Pathya-Apathya)</h2>
+  <ul>
+    <li>आलू</li>
+    <li>चाय</li>
+    <li>चावल (केवल दोपहर में एक समय)</li>
+    <li>चीनी</li>
+    <li>आम</li>
+  </ul>
+</section>
+
+<section>
+  <h2>ऑर्डर करने की प्रक्रिया</h2>
+  <p>नीचे दिए गए फॉर्म को भरें। हमारी टीम आपसे कॉल करके ऑर्डर कन्फर्म करेगी।</p>
+</section>
+
+<section>
+  <h2>Order Form</h2>
+  <form onsubmit="sendWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="पूरा नाम" required />
+    <input type="tel" id="phone" placeholder="मोबाइल नंबर" required />
+    <textarea id="address" placeholder="पूरा पता"></textarea>
+    <button type="submit">ऑर्डर सबमिट करें</button>
+  </form>
+
+  <script>
+    function sendWhatsApp() {
+      var name = document.getElementById('name').value;
+      var phone = document.getElementById('phone').value;
+      var address = document.getElementById('address').value;
+
+      var message = "नया ऑर्डर - Hikmo Sugar%0A" +
+                    "नाम: " + name + "%0A" +
+                    "मोबाइल: " + phone + "%0A" +
+                    "पता: " + address;
+
+      var url = "https://wa.me/919259561925?text=" + message;
+      window.open(url, '_blank');
+    }
+  </script>
+</section>
+
+<section class="contact">
+  <h2>Contact Details</h2>
+  <p><strong>Doctor:</strong> Dr. Amit (Ayurvedic Doctor)</p>
+  <p><strong>Contact Number:</strong> 9259561925</p>
+  <p><strong>Clinic Address:</strong> Ramnagar, Uttarakhand<br>पुराने बस स्टैंड के ठीक सामने</p>
+  <p>अधिक जानकारी के लिए दिए गए नंबर पर कॉल करें या क्लिनिक विज़िट करें।</p>
+  <a href="tel:9259561925" class="btn">Call Now</a>
+</section>
+
+<footer>
+  <p>© 2026 Hikmo Sugar | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
